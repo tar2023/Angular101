@@ -1,0 +1,112 @@
+<!-- Hello world Angular This is my {{title}}
+<br/>
+My job {{projectName}}
+<button type = "button"(click)="nanaConsole()">Console</button>
+<button type = "button"(click)="changeName('grg')">Change changeName
+<button type = "button"(click)="changeName('mmmm')">Change changeName -->
+<!-- <span>
+  ////////////////////////////////
+  มา 4 จ่าย 
+</span>
+  <div>
+    <input #priceBuffetInput type ="text"placeholder="ราคา">
+    <button (click)="calBuffer(priceBuffetInput.value)">คำนวน</button>
+  </div>
+  <span>
+    คนละ {{value}} บาท
+  </span> -->
+
+ <!-- <app-action-bar ></app-action-bar> -->
+ 
+
+ <!-- แบบ input จาก component pp-action-bar -->
+  <!-- <app-action-bar [step] = "5" ></app-action-bar> -->  
+ <br/>
+  <!-- แบบ output  จาก component pp-action-bar -->
+ <!-- <app-action-bar (counterChange)="testcounterChange()" ></app-action-bar> -->
+
+ <!-- คลิกเรียก method  testClick() ที่อยู่ใน component เดียวกัน -->
+ <!-- <button type="button" (click)="testClick()">testEventBinding</button> -->
+
+<!-- .......................................... -->
+ <!-- <app-max-min-meter></app-max-min-meter> -->
+
+<!-- <app-max-min-meter [minLabel]="'B-myMinLabel'" [maxLabel]="'B-myMaxLabel'" ></app-max-min-meter> -->
+
+<!-- <app-max-min-meter minLabel="C-myMinLabel" maxLabel="C-myMaxLabel" ></app-max-min-meter> -->
+<!-- 
+<app-max-min-meter 
+[minLabel]="appMinLabel2" 
+[maxLabel]="appMaxLabel2" 
+
+(minChange)="doAppMinChange($event)"
+(maxChange)="doAppMaxChange($event)"
+>
+</app-max-min-meter> -->
+<!-- .......................................... -->
+<!-- <app-sqaure-flex 
+[divWidth]="sqaureWidth"
+[divHeight]="sqaureHeight"
+></app-sqaure-flex>
+
+
+<div>
+  width: 
+  <button type="button" (click)="sqaureWidth=50">50px</button>
+  <button type="button" (click)="sqaureWidth=100">100px</button>
+  <button type="button" (click)="sqaureWidth=200">200px</button>
+</div> -->
+
+<!-- ep 10(twoWay)................................. -->
+<!-- <app-action-bar 
+[counter]="appCounter"
+(counterChange)="appCounter = $event">
+></app-action-bar> -->
+
+<!-- <app-action-bar 
+[(counter)]="appCounter"
+[step]="10"
+></app-action-bar>
+
+<app-sqaure-flex [divWidth]="appCounter"></app-sqaure-flex> -->
+
+<!-- .ep 11(*ngif Strutural Directive)...................... -->
+<!-- <div *ngIf ="activate">
+  <app-action-bar></app-action-bar>
+</div> -->
+
+
+<!-- <button type="button"(click)="activate=true">activate</button> -->
+
+<!-- <button 
+type="button" 
+(click)="toggleActivate()">
+  {{ activate ? 'Deactivate' : 'Activate' }}
+</button> -->
+
+<!-- .ep 12(*ngif else template)...................... -->
+<!-- <div *ngIf="activate else elseTemplate">
+  <app-action-bar></app-action-bar>
+</div>
+<ng-template #elseTemplate>
+  <div>
+    activate now
+  </div>
+</ng-template>
+<button type="button" (click)="activate=true">activate</button> -->
+
+<!-- <app-action-bar [inputDisplay]="false"></app-action-bar>
+<app-action-bar [inputDisplay]="true"></app-action-bar> -->
+
+<!-- .ep 13(typescript array)...................... -->
+<!-- <app-cdgs-root></app-cdgs-root> -->
+
+<!-- .ep 17( Rest api)...................... -->
+<!-- <app-test-request-get></app-test-request-get> -->
+
+<!-- .ep 20(PrimeNG)............................ -->
+<h5>Float minLabel</h5>
+<span class="p-float-label">
+  <input id ="float-input" type="text" pInputText [(ngModel)]="value" />
+  <label for="float-input">Username</label>
+</span>
